@@ -8,44 +8,14 @@
     * {
         box-sizing: border-box;
         font-family: 'Raleway', Arial, Helvetica, sans-serif
-        
     }
-@media (min-width: 992px){
-       
+
+a{
+    color: inherit;
+    text-decoration: none;
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-     #main {
-         width:100%;}
-
-    #footer {
-        width:70%;  }}
-a{ 
-   color: black;
-   text-decoration: none;}
-
-   
-
-
-
-
-nav a:hover{
-    text-decoration: #0065FC;
-    padding-top: 1px;
-    border-top: 2px solid #0065fc;
-}
-#logo img{
-  padding: 0px 20px;
-}
 
 
 .sinscrire {
@@ -81,17 +51,12 @@ border-top: 2px solid #0065FC;
     }
 
 
-.intro {
-    font-size: 12px;
-    color: gray;
-    font-family: Raleway;
-}
 
 
 /*SEARCH FORM*/
 
 
-.search_form {
+.search_form * {
     display: flex;
     align-items: center;
     font-size: 10px;
@@ -99,26 +64,27 @@ border-top: 2px solid #0065FC;
     margin: 0px;
 }
 
-.search_form *{
+.search_form {
   padding: 9px 10px ;
   padding-right: -4px;
   }
 
 .search_form i{
-    padding: 12px 15px;
+   padding: 15px 30px 15px 30px;
     background-color: #f2f2f2;
     border-radius: 8px 0px 0px 8px;
 }
 
 .search_form input{
     border: 1px solid #f2f2f2;
-    padding:10px 15px;
+    padding:15px 30px 15px 30px;
+    color: #0065FC;
 }
 
 
-.search_form input::placeholder{
-   font-size:11px ;
-   padding: 10px 15px;
+.search_form input:placeholder{
+   font-size:11px;
+   padding: 15px 30px 15px 30px;
    color: black;
 }
 
@@ -133,9 +99,8 @@ border-top: 2px solid #0065FC;
     flex-wrap: wrap;
     margin-top: 10px;
     font-size: 15px;
-  
-
 }
+
 
 .fa-dog,
 .fa-child,
@@ -159,7 +124,6 @@ border-top: 2px solid #0065FC;
 .filtre span{
     font-weight: bold;
     padding: 32px;
-
 }
 
 /*RESULTATS MESSAGE */
@@ -186,12 +150,10 @@ border-top: 2px solid #0065FC;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top:15px;
     width: 100%;
-    
-    
-}
+    justify-content: space-between;
+    margin-top:10px;
+   }
 
 
 #ibooki__hebergements {
@@ -220,15 +182,13 @@ border-top: 2px solid #0065FC;
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content:space-around;
-    margin-top:30px;
-    margin-bottom: 30px;
-    gap:10px;
+   justify-content: space-between;
+   flex-basis: 32px;
 }
+   
 
 .plus{
-   padding-bottom: 20px;
+   padding: 1px;
 }
 
 
@@ -237,21 +197,21 @@ border-top: 2px solid #0065FC;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content:space-between;
     border-radius: 16px;
     background-color: white;
     width: 100%;
-    border: 2px solid white;
     margin-top:-35px;
     font-size: 15px;
-    flex-basis: 5px;
-   }
+    margin:5px;
+    padding: 10px 6px 5px 5px;
+    }
 
 
 .ibooki__card img {
     object-fit: cover;
     border-radius: 16px;
-    width:100%
+    width:100%;
     }
 
 
@@ -274,10 +234,11 @@ border-top: 2px solid #0065FC;
 #ibooki__hebergement_populaires{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    flex-wrap: wrap;
     background-color: #f2f2f2;
-    margin-right:40px;
-   }
+    max-width: 375px;
+    padding: 20px 35px 20px 25px;
+}
 
 
 .ibooki__card_populaires{
@@ -285,11 +246,10 @@ border-top: 2px solid #0065FC;
     background-color:white;
     border: 3px solid white;
     border-radius: 20px;
-    padding:6px 58px 6px 6px; 
-    max-width: 350px;
+    max-width:290px;
     max-height: 145px;
-    margin-bottom: 59px;
-   
+    gap:40px;
+    
 }
 
 
@@ -298,110 +258,80 @@ border-top: 2px solid #0065FC;
     height:132px;
     object-fit: cover;
     border-bottom-left-radius: 10px;
-    border-top-left-radius:10px
-    
-   
+    border-top-left-radius:10px;
 }
     
-
 .ibooki_contenu_populaires{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: flex-start;
-    padding: 7px 0px 7px 25px;
-    border:1px solid salmon;
-   
-    }
+    font-size: 15px;
+}
 
-.ibooki_titre_populaire_contenu{
-    padding-bottom: 15px;
-    align-items: stretch;
-    border: 1px solid purple;
+
+.etoiles{
+    padding-bottom: 50px;
+}
     
-}
-.ibooki_tarif_populaires_contenu{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 30px;
-    align-items: stretch;
-    border: 1px solid brown;
-    padding: 7px 0px 7px 25px;
-  
-}
-
-
-
-.etoile{
-   max-width: 95px;
-   max-height: 15px;
-   }
+   
 
 
 /*Activités à Marseille*/
 
  #ibooki_Activites_Marseille{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: white;
     width:100%;
-    gap:10px;
     
 }
 
+.title_activites_Marseille{
+    margin-bottom: 27px;
+    margin-left: 12px;
+    font-size: large;
+}
 .ibooki_Activites{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: -30px;
-
-}
-
-
+    gap:35px;
+    border-radius: 20px;
+   } 
     
-
-
-.ibooki_photo_activite1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border: 1px solid blueviolet;
+.ibooki_Activite1,
+.ibooki_activite4{
+    box-shadow: 0 0 20px #0000002e;
+    gap:40px;
+    margin-bottom: 50px;
+    border-top-right-radius:20px;
+    border-top-left-radius: 20px;
+    border-radius: 20px;
     }
 
-
-.ibooki_photo_activite1 img,
-.ibooki_photo_activite4 img{
-    width:301px;
-    height:390px;
-    object-fit: cover;
-    background-size: 100% 100%;
-  
-
-    
-}
-
- 
 
 .ibooki_activite2et3,
 .ibooki_activite5et6{
     display:flex;
     flex-direction: column;
-    box-shadow: 0 0 20px #f2f2f2;
-    margin: 0 0 20px 0;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 20px black;
+    border-top-right-radius:20px;
+    border-top-left-radius: 20px;
+    margin-bottom: 50px;
+    border-radius:20px;
+    }
+
+.ibooki_activite2,
+.ibooki_activite5{
+    margin-bottom: 50px;
     border-radius: 20px;
-    padding: 0 0 20px 0;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 20px black;
 }
 
-
-
-
-
-
-
-
-
- 
 
 .ibooki_photo_activite1,
 .ibooki_photo_activite2,
@@ -409,62 +339,43 @@ border-top: 2px solid #0065FC;
 .ibooki_photo_activite4,
 .ibooki_photo_activite5,
 .ibooki_photo_activite6{
-    margin-right: 20px;
-    padding: 0 0 30px 0px;
-    background-color: #f2f2f2;
-    margin-bottom: -50px;
-    margin-top: 60px;
+    background-size: 100% 100%;
     border-radius: 20px;
+    border-top-right-radius:20px;
+    border-top-left-radius: 20px;
     }
 
-
-
-.ibooki_photo_activite1 img,
-.ibooki_photo_activite4 img{
-    width:301px;
-    height:390px;
-    object-fit: cover;
-    }
-
-
-
-
-.ibooki_photo_activite2 img {
-    width:309px;
-    height:180px;
-    object-fit: cover;
-
-    
-}
-
-.ibooki_photo_activite4 img  {
-    width:301px;
-    height:390px;
-    
-}
-
-
-.ibooki_photo_activite3 img  {
-    width:309px;
-    height:112px;
-  }
-
-.ibooki_photo_activite5 img{
-    width: 304px;
-    height: 141px;
-    }
-.ibooki_photo_activite6 img{
-    width: 304px;
-    height: 155px;
-   }
-
-
+  .ibooki_titre_activite1,
   .ibooki_titre_activite2,
   .ibooki_titre_activite3,
   .ibooki_titre_activite4,
   .ibooki_titre_activite5,
   .ibooki_titre_activite6{
     margin-left: 20px;
+    }
+.ibooki_photo_activite1 img,
+.ibooki_photo_activite4 img{
+    width: 301px;
+    height: 390px;
+}
+.ibooki_photo_activite2 img{
+    width: 304px;
+    height: 183px;
+}
+
+.ibooki_photo_activite3 img{
+    width: 304px;
+    height: 112px;
+}
+
+.ibooki_photo_activite5 img{
+    width: 304px;
+    height: 141px;
+}
+
+.ibooki_photo_activite6 img{
+    width: 304px;
+    height: 155px;
 }
 
 .ibooki_photo_activite1 img,
@@ -473,15 +384,17 @@ border-top: 2px solid #0065FC;
 .ibooki_photo_activite4 img,
 .ibooki_photo_activite5 img,
 .ibooki_photo_activite6 img{
-    border-top-right-radius:20px;
-    border-top-left-radius: 20px;
-    background-size: 100% 100%;
-    object-fit: cover;
-}
+   border-top-right-radius:20px;
+   border-top-left-radius: 20px;
+   object-fit: cover;
+    }
+
+/*FOOTER*/
+
+
 
 .footer{
-   
-    width: 100%;
+   width:100%;
     background-color: #f2f2f2;
     display: flex;
     flex-direction: row;
@@ -495,8 +408,7 @@ border-top: 2px solid #0065FC;
 .assistance{
     display: flex;
     flex-direction: column;
-   
-    }
+   }
 
 
 
@@ -506,9 +418,7 @@ ol{
 .a_propos h4,
 .nos_hebergements h4,
 .assistance h4{
-
     font-size: normal;
     color: gray;
-    
-}
+    }
 
