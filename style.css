@@ -1,22 +1,18 @@
-@font-face {
-    font-family: Raleway;
-    src: url('static/Raleway-Black.ttf') url('static/Raleway-BlackItalic.ttf') 
-        url('static/Raleway-VariableFont_wght.ttf')
-      }
 
-  
     * {
         box-sizing: border-box;
-        font-family: 'Raleway', Arial, Helvetica, sans-serif
+        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        
     }
 a{
     color: inherit;
     text-decoration: none;
+  }
 
-   }
 nav a {
     padding-top: 40px;
 }
+
 
 
 #logo{
@@ -67,7 +63,7 @@ margin-bottom: 50px;
 
 .search_form i{
     background-color:#f2f2f2;
-    border-radius: 16 0 0 16px;
+    border-radius: 16px 0 0 16px;
     padding: 17px 20px;
     font-size: 12px;
     
@@ -240,8 +236,9 @@ margin-bottom: 50px;
 
 
 .ibooki__title p,
-.ibooki__title h3{
+.ibooki__title h2{
     margin: 3px;
+    font-weight: bold;
  }
 
 
@@ -259,10 +256,11 @@ margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #f2f2f2;
+    background-color:#f2f2f2;
     max-width: 390px;
     padding: 20px 35px 20px 35px;
-    gap:20px
+    gap:20px;
+    border-radius: 20px;
     
 }
 
@@ -328,7 +326,7 @@ margin-bottom: 50px;
 .title_activites_Marseille{
     margin-bottom: 27px;
     margin-left: 12px;
-    font-size: large;
+    font-size:large;
 }
 .ibooki_Activites{
     display: flex;
@@ -431,13 +429,14 @@ margin-bottom: 50px;
 
 
 .footer{
-   width:100%;
+    width:100%;
     background-color: #f2f2f2;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 45px 20px 45px 29px;
+    padding: 45px 20px 45px 20px;
+    margin-right: auto;
+    
 }
 
 .a_propos,
@@ -455,7 +454,26 @@ ol{
 .a_propos h4,
 .nos_hebergements h4,
 .assistance h4{
-    font-size: normal;
+    font-size: 12px;
     color: gray;
     }
 
+/*
+ Style css pour les petits écrans
+ */
+ @media only screen and (max-device-width: 480px) {
+     .footer{
+         display: flex;
+         flex-direction: column;
+     }
+     .a_propos,
+     .nos_hebergements,
+     .assistance,
+     .ol{
+         display: flex;
+         flex-direction: column;
+        }
+
+    
+     
+    }
